@@ -3,20 +3,28 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\o_jp\\keystores\\upload-keystore.jks')
+            storePassword '74044279'
+            keyAlias = 'upload'
+            keyPassword '74044279'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
-        applicationId "ru.andrey.pwa"
+        applicationId "br.zero.pwa"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         manifestPlaceholders = [
-                hostName       : "antipovandrey.github.io/PWA/",
-                defaultUrl     : "https://sampleproject-5f50b.firebaseapp.com/",
+                hostName       : "zerocowl.github.io/zlist/",
+                defaultUrl     : "https://zerocowl.github.io/zlist/",
                 assetStatements: '[{ "relation": ["delegate_permission/common.handle_all_urls"], ' +
-                        '"target": {"namespace": "web", "site": "https://sampleproject-5f50b.firebaseapp.com/"}}]'
+                        '"target": {"namespace": "web", "site": "https://zerocowl.github.io/zlist/"}}]'
         ]
 
         buildConfigField "String", "DEFAULT_URL", "\"${manifestPlaceholders.defaultUrl}\""
@@ -24,6 +32,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {

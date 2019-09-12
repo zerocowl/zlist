@@ -1,4 +1,4 @@
-package ru.andrey.pwa
+package br.zero.pwa
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("ru.andrey.pwa", appContext.packageName)
+        assertEquals("br.zero.pwa", appContext.packageName)
     }
 }

@@ -1,4 +1,4 @@
-package ru.andrey.pwa
+package br.zero.pwa
 
 import android.content.Intent
 import android.net.Uri
