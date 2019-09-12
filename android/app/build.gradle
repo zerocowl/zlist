@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "ru.andrey.pwa"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                hostName       : "antipovandrey.github.io/PWA/",
+                defaultUrl     : "https://sampleproject-5f50b.firebaseapp.com/",
+                assetStatements: '[{ "relation": ["delegate_permission/common.handle_all_urls"], ' +
+                        '"target": {"namespace": "web", "site": "https://sampleproject-5f50b.firebaseapp.com/"}}]'
+        ]
+
+        buildConfigField "String", "DEFAULT_URL", "\"${manifestPlaceholders.defaultUrl}\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'com.github.GoogleChrome.custom-tabs-client:customtabs:3a71a75c9f'
+}
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ZList</string>
+    <string name="description">Isso é nativo :)
+    </string>
+    <string name="input_description">O texto inserido abaixo será exibido no ZList</string>
+
+        <string name="open_twa_button_text">Ok</string>
+    <string name="todo_text_hint">Item</string>
+</resources>
