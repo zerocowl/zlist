@@ -25,8 +25,8 @@ const styles = {
 const renderTodoTextField = ({input, ...other}) => (
   <TextField
     id="outlined-with-placeholder"
-    label="Enter todo here"
-    placeholder="Todo"
+    label="Adicione um item aqui..."
+    placeholder="Item"
     margin="normal"
     variant="outlined"
     autoComplete="off"

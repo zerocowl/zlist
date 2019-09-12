@@ -26,6 +26,9 @@ const theme = createMuiTheme({
   palette: {
     primary: blue,
   },
+  typography: {
+    useNextVariants: true,
+  }
 });
 
 const App = ({classes}) => (
@@ -36,7 +39,7 @@ const App = ({classes}) => (
         <AppBar position="fixed">
           <Toolbar variant="dense">
             <Typography variant="h6" color="inherit" className={classes.grow}>
-              ToDo
+              ZList
             </Typography>
             <GitHubLink/>
           </Toolbar>

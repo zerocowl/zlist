@@ -1,6 +1,6 @@
 {
-  "short_name": "ToDo",
-  "name": "ToDo App",
+  "short_name": "ZList",
+  "name": "ZList App",
   "icons": [
     {
       "src": "tick_ico_48.png",

@@ -6,7 +6,7 @@ import GitHub from "./ui/GitHub";
 const GitHubLink = () => {
   return (
     <>
-      <IconButton href="https://github.com/AntipovAndrey" color="inherit">
+      <IconButton href="https://github.com/zerocowl" color="inherit">
         <GitHub/>
       </IconButton>
     </>
