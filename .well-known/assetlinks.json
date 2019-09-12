@@ -1,5 +1,9 @@
 [{
   "relation": ["delegate_permission/common.handle_all_urls"],
-  "target" : { "namespace": "android_app", "package_name": "br.zero.pwa",
-               "sha256_cert_fingerprints": ["7B:04:1B:27:56:C9:8E:AA:B8:6F:D8:86:05:7B:DC:C3:8E:B0:F6:1A:9B:B7:CF:24:3B:34:E4:F5:8F:DB:86:EA"] }
+  "target": {
+    "namespace": "android_app",
+    "package_name": "br.zero.pwa",
+    "sha256_cert_fingerprints":
+    ["7B:04:1B:27:56:C9:8E:AA:B8:6F:D8:86:05:7B:DC:C3:8E:B0:F6:1A:9B:B7:CF:24:3B:34:E4:F5:8F:DB:86:EA"]
+  }
 }]
