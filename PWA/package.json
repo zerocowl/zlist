@@ -1,7 +1,7 @@
 {
-  "homepage": "https://antipovandrey.github.io/PWA/",
-  "name": "pwa",
-  "version": "0.1.0",
+  "homepage": "https://zerocowl.github.io/zlist/",
+  "name": "zlist",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.2",
